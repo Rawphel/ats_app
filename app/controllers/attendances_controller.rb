@@ -65,6 +65,6 @@ class AttendancesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def attendance_params
-      params.require(:attendance).permit(:session, :student_id, :attended, :temperature)
+      params.require(:attendance).permit(:session_id, :student_id, :attended, :temperature)
     end
 end

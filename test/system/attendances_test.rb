@@ -15,7 +15,7 @@ class AttendancesTest < ApplicationSystemTestCase
     click_on "New Attendance"
 
     check "Attended" if @attendance.attended
-    fill_in "Session", with: @attendance.session
+    fill_in "Session", with: @attendance.session_id
     fill_in "Student", with: @attendance.student_id
     fill_in "Temperature", with: @attendance.temperature
     click_on "Create Attendance"
@@ -29,7 +29,7 @@ class AttendancesTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     check "Attended" if @attendance.attended
-    fill_in "Session", with: @attendance.session
+    fill_in "Session", with: @attendance.session_id
     fill_in "Student", with: @attendance.student_id
     fill_in "Temperature", with: @attendance.temperature
     click_on "Update Attendance"
