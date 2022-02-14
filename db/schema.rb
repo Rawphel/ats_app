@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_14_095136) do
+ActiveRecord::Schema.define(version: 2022_02_14_104719) do
 
   create_table "attendances", force: :cascade do |t|
     t.integer "session_id", null: false
@@ -62,7 +62,7 @@ ActiveRecord::Schema.define(version: 2022_02_14_095136) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "name"
-    t.boolean "rights"
+    t.boolean "rights", default: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
