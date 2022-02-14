@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @session.subject %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @session.user_id %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @session.grade_id %>
+</p>
+
+<p>
+  <strong>Class time:</strong>
+  <%= @session.class_time %>
+</p>
+
+<p>
+  <strong>Class date:</strong>
+  <%= @session.class_date %>
+</p>
+
+<%= link_to 'Edit', edit_session_path(@session) %> |
+<%= link_to 'Back', sessions_path %>
