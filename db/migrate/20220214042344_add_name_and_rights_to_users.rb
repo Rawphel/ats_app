@@ -1,6 +1,5 @@
 class AddNameAndRightsToUsers < ActiveRecord::Migration[6.1]
   def change
-    add_column :users, :name, :string
-    add_column :users, :rights, :boolean
+    change_column :users, :rights, :boolean, default => false
   end
 end

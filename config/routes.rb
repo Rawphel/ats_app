@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   namespace :edu do
       resources :users
-      resources :attendances
-      resources :grades
       resources :sessions
       resources :students
 
