@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  session: 
+  student: one
+  attended: false
+  temperature: 1.5
+
+two:
+  session: 
+  student: two
+  attended: false
+  temperature: 1.5
