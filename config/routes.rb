@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :students
   resources :grades
   get 'welcome/index'
   root to: 'welcome#index'
