@@ -3,6 +3,7 @@
 Made by Rafael Eduardo Hernandez Delgado (252770)
 
 Lecturer: Assoc. Prof. Dr. Massudi bin Mahmuddin
+
 Supervisor: Dr. Hapini bin Awang
 
 # Summary
@@ -31,3 +32,5 @@ The application is currently online and can be found on https://rafael-ats.herok
 # Other links
 
 Final report document: https://docs.google.com/document/d/1v-35r6ALt3dPJJKF4oM69V9NfnCo1vc2/edit?usp=sharing&ouid=111843119828532771981&rtpof=true&sd=true
+
+Project Presentation: https://www.youtube.com/watch?v=42Uyaf7R3IY
