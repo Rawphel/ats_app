@@ -34,3 +34,5 @@ The application is currently online and can be found on https://rafael-ats.herok
 Final report document: https://docs.google.com/document/d/1v-35r6ALt3dPJJKF4oM69V9NfnCo1vc2/edit?usp=sharing&ouid=111843119828532771981&rtpof=true&sd=true
 
 Project Presentation: https://www.youtube.com/watch?v=42Uyaf7R3IY
+
+Figma prototype: https://www.figma.com/proto/E0mdLh2u93iYvQVHodWRGI/TSS-SK-Tanah-Rata
