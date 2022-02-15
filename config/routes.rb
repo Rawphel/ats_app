@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   namespace :edu do
       resources :users
-      resources :sessions
-      resources :grades
       resources :students
+      resources :sessions
+      resources :attendances
 
       root to: "users#index"
     end

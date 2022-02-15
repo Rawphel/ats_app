@@ -6,6 +6,10 @@ class SessionsController < ApplicationController
     @sessions = Session.all
   end
 
+  def attendance
+    
+  end
+
   # GET /sessions/1 or /sessions/1.json
   def show
   end

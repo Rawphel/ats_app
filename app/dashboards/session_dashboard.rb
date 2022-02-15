@@ -26,7 +26,6 @@ class SessionDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = %i[
     user
     grade
-    id
     subject
   ].freeze
 
@@ -69,7 +68,7 @@ class SessionDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how sessions are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(session)
-  #   "Session ##{session.id}"
-  # end
+  def display_resource(session)
+    "#{session.subject} on (#{session.class_date.strftime("%b%d")}) at (#{session.class_time.strftime("%l:%M%P")})"
+  end
 end

@@ -58,7 +58,7 @@ class GradeDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how grades are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(grade)
-  #   "Grade ##{grade.id}"
-  # end
+  def display_resource(grade)
+    "#{grade.name}"
+  end
 end

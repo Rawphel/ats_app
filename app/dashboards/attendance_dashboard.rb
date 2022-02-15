@@ -12,7 +12,7 @@ class AttendanceDashboard < Administrate::BaseDashboard
     student: Field::BelongsTo,
     id: Field::Number,
     attended: Field::Boolean,
-    temperature: Field::Number.with_options(decimals: 2),
+    temperature: Field::Number.with_options(decimals: 1),
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -23,10 +23,10 @@ class AttendanceDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = %i[
-    session
     student
-    id
     attended
+    temperature
+    session
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -67,6 +67,6 @@ class AttendanceDashboard < Administrate::BaseDashboard
   # across all pages of the admin dashboard.
   #
   # def display_resource(attendance)
-  #   "Attendance ##{attendance.id}"
+  #   "#{attendance.temperature}"
   # end
 end
